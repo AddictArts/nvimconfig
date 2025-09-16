@@ -443,7 +443,6 @@ require('lazy').setup({
           mappings = {
             i = {
               ['<cr>'] = select_one_or_multi,
-              ['<c-enter>'] = 'to_fuzzy_refine',
             },
           },
         },
