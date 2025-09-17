@@ -171,6 +171,8 @@ local this_os = vim.uv.os_uname().sysname
 if this_os:find 'Windows_NT' then
   -- Windows powershell use pwsh.exe
   vim.o.shell = 'pwsh.exe'
+  vim.o.shellcmdflag = '-NoProfile -Command'
+  vim.o.shellxquote = ''
 end
 
 -- [[ Basic Keymaps ]]
